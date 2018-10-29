@@ -49,4 +49,10 @@ module.exports = class MenuController {
     console.log("Thanks for using AddressBloc!");
     process.exit();
   }
+
+  getDate(){
+    var datetime = new Date();
+    console.log(datetime);
+    this.main();
+  }
 }
