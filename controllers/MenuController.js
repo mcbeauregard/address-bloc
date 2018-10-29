@@ -9,7 +9,8 @@ module.exports = class MenuController {
         message: "Please choose from an option below: ",
         choices: [
           "Add new contact",
-          "Exit"
+          "Exit",
+          "Show date"
         ]
       }
     ];
@@ -54,8 +55,10 @@ module.exports = class MenuController {
   }
 
   getDate(){
-    var datetime = new Date();
-    console.log(datetime);
+    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    var today  = new Date();
+
+    console.log(today.toLocaleDateString("en-US", options)); // Saturday, September 17, 2016
     this.main();
   }
 }
