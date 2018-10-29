@@ -23,6 +23,9 @@ module.exports = class MenuController {
         case "Add new contact":
           this.addContact();
           break;
+        case "Show date":
+          this.getDate();
+          break;
         case "Exit":
           this.exit();
         default:
