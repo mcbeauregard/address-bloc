@@ -61,4 +61,9 @@ module.exports = class MenuController {
     console.log(today.toLocaleDateString("en-US", options)); // Saturday, September 17, 2016
     this.main();
   }
+
+  getContactCount(){
+    return this.contacts.length;
+  }
+
 }
