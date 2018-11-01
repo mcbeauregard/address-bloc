@@ -19,5 +19,11 @@
        this.menu.contacts.push("Bob");
        expect(this.menu.getContactCount()).toBe(1)
      });
+ // #3 Write an instance method for the MenuController called remindMe. The behavior of this method is to return a string containing the text "Learning is a life-long pursuit". Use TDD to implement this feature.
+  describe("#remindMe()", () => {
+    it("should return sting", () => {
+      expect(this.menu.remindMe()).toBe("Learning is a life-long pursuit")
+      });
    });
  });
+});
