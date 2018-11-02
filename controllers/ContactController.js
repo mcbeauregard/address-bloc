@@ -20,12 +20,19 @@ module.exports = class ContactController {
           message: "Contact's phone number - ",
           validate(val){
             return val !== "";
-          }
+          },
+          {
+            type: "input",
+            name: "email",
+            message: "Contact's email address - ",
+            validate(val){
+              return val !== "";
+            }
         }
       ];
   }
 
-  addContact(name, phone){
-    return Contact.create({name, phone})
+  addContact(name, phone, email){
+    return Contact.create({name, phone, email})
   }
 }
