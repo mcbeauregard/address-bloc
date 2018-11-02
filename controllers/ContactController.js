@@ -20,6 +20,7 @@ module.exports = class ContactController {
           message: "Contact's phone number - ",
           validate(val){
             return val !== "";
+            }
           },
           {
             type: "input",
