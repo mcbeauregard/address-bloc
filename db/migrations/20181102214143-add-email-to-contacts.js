@@ -3,9 +3,7 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.addColumn("Contacts", "email" { //first arg is name of table, second is object of key-value pairs
-      id: {   
         type: Sequelize.INTEGER //sets property type. Only values of this type are allowed
-      }
     });
   },
 
