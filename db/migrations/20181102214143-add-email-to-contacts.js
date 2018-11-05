@@ -8,6 +8,6 @@ module.exports = {
   },
 
   down: (queryInterface, Sequelize) => {  // We call the down method when we roll back the migration, and it undoes whatever the up method did. In this case, it drops the Contacts table
-    return queryInterface.deleteColumn('Contacts','email');
+    return queryInterface.removeColumn('Contacts','email');
   }
 };
