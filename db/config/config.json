@@ -4,15 +4,15 @@
     "password": null,
     "database": "address-bloc-dev",
     "host": "127.0.0.1",
-    "dialect": "postgress",
+    "dialect": "postgres",
     "logging": false
   },
   "test": {
-    "username": "postgress",
+    "username": "postgres",
     "password": null,
     "database": "address-bloc-test",
     "host": "127.0.0.1",
-    "dialect": "postgress",
+    "dialect": "postgres",
     "logging": false
   }
 }
