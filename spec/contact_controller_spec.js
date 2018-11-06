@@ -66,6 +66,7 @@ describe("ContactController", () => {
         done();
       });
     });
+  });
 
     describe("search methods", () => {
 
@@ -115,6 +116,7 @@ describe("ContactController", () => {
               });
             });
           });
+          
       });
 
       describe("#binarySearch()", () => {
@@ -167,6 +169,7 @@ describe("ContactController", () => {
             });
           });
         });
+
       });
       
       describe("#search()", () => {
@@ -202,7 +205,7 @@ describe("ContactController", () => {
             });
           });
         });
-  
+
       });
 
       describe("#delete()", () => {
@@ -254,5 +257,5 @@ describe("ContactController", () => {
         });
       });
     });
+
   });
-})
