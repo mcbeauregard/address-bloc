@@ -8,7 +8,7 @@ describe("ContactController", () => {
         this.book = new ContactController();
     
     // #1 clear the database of any entries created.
-    sequelize.sync({force: true}).then((res) => {
+    sequelize.sync({force: true, logging: console.log}).then((res) => {
         done();
       })
       .catch((err) => {
@@ -116,7 +116,7 @@ describe("ContactController", () => {
               });
             });
           });
-          
+
       });
 
       describe("#binarySearch()", () => {
